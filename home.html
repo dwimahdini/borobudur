@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Candi Borobudur</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .hero {
+      background: url('https://img.freepik.com/free-photo/famous-borobudur-temple-mungkid-indonesia_181624-15041.jpg?t=st=1746780344~exp=1746783944~hmac=6c55cd6bfebd8f28d481e39a5085a2cdf2ba5cfe4c80683eed65d8a530b130eb&w=1380') center/cover no-repeat;
+      height: 100vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      text-shadow: 2px 2px 5px #000;
+    }
+    .hero-content {
+      max-width: 600px;
+      margin-left: 10%;
+      animation: fadeInDown 2s ease;
+    }
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .feature-icon {
+      width: 50px;
+      height: 50px;
+    }
+    footer {
+      background-color: #343a40;
+      color: white;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="home.html">Candi Borobudur</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="sejarah.html">Sejarah</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="galeri.html">Galeri</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="wisataDropdown" role="button"
+                        data-bs-toggle="dropdown">
+                        Wisata
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="/wisata/dagi.html">Bukit Dagi</a></li>
+                        <li><a class="dropdown-item" href="/wisata/tamanPadma.html">Taman Padma</a></li>
+                        <li><a class="dropdown-item" href="/wisata/lapanganMerah.html">Lapangan Merah</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutUs.html">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1 class="display-4 fw-bold">Keajaiban Dunia di Indonesia</h1>
+    <p class="lead">Candi Borobudur adalah monumen Buddha terbesar di dunia yang terletak di Magelang, Jawa Tengah.</p>
+    <a href="#tentang" class="btn btn-primary mt-3">Pelajari Lebih Lanjut</a>
+  </div>
+</section>
+
+<!-- Tentang -->
+<section id="tentang" class="py-5">
+  <div class="container text-center">
+    <h2 class="mb-4">Tentang Candi Borobudur</h2>
+    <p class="mb-4">Candi Borobudur dibangun pada abad ke-9 oleh Dinasti Syailendra dan merupakan simbol kemegahan budaya Indonesia. Candi ini memiliki struktur yang kompleks dan kaya akan nilai sejarah dan spiritual.</p>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png" class="feature-icon mb-3" alt="Ikon sejarah"/>
+        <h5>Sejarah</h5>
+        <p>Telusuri sejarah panjang Borobudur sejak era kerajaan kuno.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/3208/3208727.png" class="feature-icon mb-3" alt="Ikon budaya"/>
+        <h5>Budaya</h5>
+        <p>Warisan budaya yang masih dijaga dan dirayakan hingga kini.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/3197/3197957.png" class="feature-icon mb-3" alt="Ikon wisata"/>
+        <h5>Wisata</h5>
+        <p>Destinasi wisata favorit dengan panorama dan sunrise ikonik.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+  <div class="container">
+    <p>&copy; 2025DM Candi Borobudur. dibuat oleh Putri Maharani</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute("href")).scrollIntoView({
+        behavior: "smooth"
+      });
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sejarah</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header,
+        footer {
+            background-color: #343a40;
+            color: white;
+        }
+
+        .hero-sejarah {
+            background: url('https://img.freepik.com/free-photo/borobudur-temple-java-indonesia_1150-11070.jpg') center/cover no-repeat;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        .hero-sejarah h1 {
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .content-section {
+            padding: 60px 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="home.html">Candi Borobudur</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="sejarah.html">Sejarah</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeri.html">Galeri</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="wisataDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            Wisata
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="/wisata/dagi.html">Bukit Dagi</a></li>
+                            <li><a class="dropdown-item" href="/wisata/tamanPadma.html">Taman Padma</a></li>
+                            <li><a class="dropdown-item" href="/wisata/lapanganMerah.html">Lapangan Merah</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-sejarah">
+        <div class="text-center">
+            <h1 class="display-4">Sejarah Candi Borobudur</h1>
+        </div>
+    </section>
+
+    <!-- Konten -->
+    <section class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="https://img.freepik.com/free-photo/borobudur-buddhist-temple-sunrise-java-island-indonesia_123827-27609.jpg"
+                        class="img-fluid rounded" alt="Candi Borobudur">
+                </div>
+                <div class="col-md-6">
+                    <h3>Asal Usul dan Pembangunan</h3>
+                    <p>
+                        Candi Borobudur dibangun pada abad ke-9 oleh Dinasti Syailendra, di masa pemerintahan Raja
+                        Samaratungga. Candi ini dirancang sebagai stupa raksasa yang mencerminkan alam semesta dalam
+                        kepercayaan Buddha Mahayana.
+                    </p>
+                    <p>
+                        Pembangunannya menggunakan lebih dari 2 juta balok batu vulkanik, tanpa menggunakan semen. Candi
+                        ini memiliki lebih dari 2.600 panel relief dan 500 lebih arca Buddha, menjadikannya candi Buddha
+                        terbesar di dunia.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-md-6 order-md-2">
+                    <img src="https://img.freepik.com/free-photo/famous-borobudur-temple-indonesia-sunset_181624-13200.jpg"
+                        class="img-fluid rounded" alt="Relief Candi">
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <h3>Masa Terlupakan dan Penemuan Kembali</h3>
+                    <p>
+                        Setelah sempat dilupakan dan tertutup abu vulkanik dari letusan gunung Merapi, Borobudur
+                        ditemukan kembali pada abad ke-19 oleh Sir Thomas Stamford Raffles.
+                    </p>
+                    <p>
+                        Restorasi besar-besaran dilakukan oleh pemerintah Indonesia dan UNESCO, menjadikan Borobudur
+                        sebagai Situs Warisan Dunia pada tahun 1991.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5 py-4">
+        <div class="container">
+            <p>&copy; 2025DM Candi Borobudur. dibuat oleh Putri Maharani</p>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
